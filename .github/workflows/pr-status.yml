@@ -17,8 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: main
-    - uses: actions/checkout@v3
+        ref: ${{ github.event.pull_request.head.sha }}
     - uses: actions/cache@v1
       with:
         path: ~/.cache/pip
