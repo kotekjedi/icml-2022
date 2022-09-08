@@ -53,7 +53,7 @@ class RaccOOD(Task, OODScoreTaskMixin):
         None,
     )
 
-    max_batch_size: int = 64
+    max_batch_size: int = 164
 
     def setup(self):
         """Load and prepare the data."""
